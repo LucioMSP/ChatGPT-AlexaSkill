@@ -1,0 +1,45 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "proteo chatgpt",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "AskChatGPTIntent",
+          "slots": [
+            {
+              "name": "question",
+              "type": "AMAZON.SearchQuery"
+            }
+          ],
+          "samples": [
+            "dime sobre {question}",
+            "que es {question}",
+            "que {question}",
+            "dame informacion {question}",
+            "que sabes de {question}",
+            "dime {question}",
+            "pregunta {question}"
+          ]
+        }
+      ],
+      "types": []
+    }
+  },
+  "version": "8"
+}
